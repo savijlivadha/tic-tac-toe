@@ -1,0 +1,22 @@
+{
+  "files": {
+    "app.js": "/tic-tac-toe/static/js/app.6f8a8a0b.chunk.js",
+    "app.js.map": "/tic-tac-toe/static/js/app.6f8a8a0b.chunk.js.map",
+    "runtime~app.js": "/tic-tac-toe/static/js/runtime~app.f305e1de.js",
+    "runtime~app.js.map": "/tic-tac-toe/static/js/runtime~app.f305e1de.js.map",
+    "static/js/2.8bbc3aea.chunk.js": "/tic-tac-toe/static/js/2.8bbc3aea.chunk.js",
+    "static/js/2.8bbc3aea.chunk.js.map": "/tic-tac-toe/static/js/2.8bbc3aea.chunk.js.map",
+    "favicon-16.png": "/tic-tac-toe/favicon-16.png",
+    "favicon-32.png": "/tic-tac-toe/favicon-32.png",
+    "favicon.ico": "/tic-tac-toe/favicon.ico",
+    "index.html": "/tic-tac-toe/index.html",
+    "manifest.json": "/tic-tac-toe/manifest.json",
+    "serve.json": "/tic-tac-toe/serve.json",
+    "static/js/2.8bbc3aea.chunk.js.LICENSE.txt": "/tic-tac-toe/static/js/2.8bbc3aea.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.f305e1de.js",
+    "static/js/2.8bbc3aea.chunk.js",
+    "static/js/app.6f8a8a0b.chunk.js"
+  ]
+}
