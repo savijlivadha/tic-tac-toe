@@ -1,16 +1,15 @@
 import { StatusBar } from "expo-status-bar";
-import React, { useEffect, useState } from "react";
+import React, { Component } from "react";
 import {
   StyleSheet,
   Text,
   View,
-  FlatList,
-  TouchableOpacity,
-  Button,
 } from "react-native";
+import { Button } from "@react-native-material/core";
 import SelectMode from "./components/SelectMode";
 import Board from "./components/Board";
 import { calculateWinner, calculateDraw, calculateBestMove } from "./utility";
+import { IconButton, ActivityIndicator } from "@react-native-material/core";
 
 enum Status {
   PLAYING,
@@ -18,89 +17,174 @@ enum Status {
   DRAW,
 }
 
-export default function App() {
-  const [board, setBoard] = useState<Array<"X" | "O">>(Array(9).fill(null));
-  const [next, setNext] = useState<"X" | "O">("X");
-  const [winner, setWinner] = useState<string>();
-  const [status, setStatus] = useState(Status.PLAYING);
-  const [players, setPlayers] = useState<0 | 1 | 2>(0);
+type AppState = {
+  board: Array<"X" | "O">,
+  next: "X" | "O",
+  winner?: string,
+  status: Status,
+  players: 0 | 1 | 2,
+  thinking: boolean,
+};
 
-  useEffect(() => {
+class App extends Component {
+  state: AppState = {
+    board: Array(9).fill(null),
+    next: "X",
+    status: Status.PLAYING,
+    players: 0,
+    thinking: false,
+  };
+
+  componentDidUpdate(prevProps: Readonly<{}>, prevState: Readonly<AppState>): void {
+    const {
+      board,
+    } = this.state;
+
+    if (prevState.board.join('') === board.join('')) return;
+
     const wnr = calculateWinner(board);
     if (wnr) {
-      setStatus(Status.PAUSED);
-      setWinner(wnr);
+      this.setState({
+        status: Status.PAUSED,
+        winner: wnr,
+        thinking: false,
+      });
     } else if (calculateDraw(board)) {
-      setStatus(Status.DRAW);
-    } else if (next === "O" && players === 1) {
-      makeAIMove();
+      this.setState({
+        status: Status.DRAW,
+        thinking: false,
+      });
     }
-  }, [board]);
+  }
 
-  useEffect(() => {}, [next]);
+  onPress = (index: number) => {
+    const callback = () => {
+      const {
+        next,
+        players,
+      } = this.state;
 
-  const onPress = (index: number) => {
-    setBoard((board) => {
-      return [...board.slice(0, index), next, ...board.slice(index + 1)];
+      if (next === "O" && players === 1) {
+        // this.setState({
+        //   thinking: true,
+        // }, () => {
+        //   setTimeout(() => {
+            this.makeAIMove();
+        //   }, 500);
+        // });
+      }
+    };
+
+    this.setState(({ board, next }: AppState) => ({
+      board: [...board.slice(0, index), next, ...board.slice(index + 1)],
+      next: next === "X" ? "O" : "X",
+    }), callback);
+  };
+
+  onReset = () => {
+    this.setState({
+      board: Array(9).fill(null),
+      next: "X",
+      winner: undefined,
+      status: Status.PLAYING,
+      thinking: false,
     });
-    setNext((next) => (next === "X" ? "O" : "X"));
   };
 
-  const onReset = () => {
-    setBoard(Array(9).fill(null));
-    setNext("X");
-    setWinner(undefined);
-    setStatus(Status.PLAYING);
-  };
+  getStatus = () => {
+    const {
+      next,
+      status,
+      winner,
+      thinking,
+    } = this.state;
 
-  const getStatus = () => {
+    if (thinking) return (
+      <>
+        <ActivityIndicator />
+        &nbsp;
+        Thinking...
+      </>
+    );
+
     if (winner) return `Winner: ${winner}`;
     if (status === Status.DRAW) return "Draw";
     return `Next: ${next}`;
   };
 
-  const makeAIMove = () => {
+  makeAIMove = () => {
+    const {
+      board,
+    } = this.state;
+
     const index = calculateBestMove(board);
     if (index !== -1) {
-      setBoard((board) => {
-        return [...board.slice(0, index), "O", ...board.slice(index + 1)];
+      this.setState({
+        thinking: true,
+      }, () => {
+        setTimeout(() => {
+          this.setState(({ board }: AppState) => ({
+            board: [...board.slice(0, index), "O", ...board.slice(index + 1)],
+            next: "X",
+            thinking: false,
+          }));
+        }, 500);
       });
-      setNext("X");
     }
   };
 
-  if (!players) {
-    return <SelectMode setPlayers={setPlayers} />;
-  }
+  setPlayers = (players: 0 | 1 | 2) => this.setState({ players });
 
-  return (
-    <View style={styles.container}>
-      <Text style={styles.header}>TIC TAC TOE</Text>
-      <Board
-        board={board.map((value, i) => ({
-          value,
-          onPress: () => onPress(i),
-          status,
-        }))}
-      />
-      <Text style={styles.status}>{getStatus()}</Text>
-      <View style={styles.buttons}>
-        <View style={styles.button}>
-          <Button title="RESET" color="red" onPress={onReset} />
-        </View>
-        <View style={styles.button}>
-          <Button
-            title="BACK"
-            onPress={() => {
-              onReset();
-              setPlayers(0);
-            }}
+  render(): React.ReactNode {
+    const {
+      board,
+      status,
+      players,
+      thinking,
+    } = this.state;
+
+    let MainContent;
+
+    if (players) {
+      MainContent = (
+        <>
+          <Board
+            board={board.map((value, i) => ({
+              value,
+              onPress: () => this.onPress(i),
+              status,
+              thinking,
+            }))}
           />
-        </View>
+          <Text style={styles.status}>{this.getStatus()}</Text>
+          <View style={styles.buttons}>
+            <View style={styles.button}>
+              <Button title="RESET" color="red" onPress={this.onReset} />
+            </View>
+            <View style={styles.button}>
+              <Button
+                title="BACK"
+                onPress={() => {
+                  this.onReset();
+                  this.setPlayers(0);
+                }}
+              />
+            </View>
+          </View>
+        </>
+      );
+    } else {
+      MainContent = <SelectMode setPlayers={this.setPlayers} />;
+    }
+
+    return (
+      <View style={styles.container}>
+        <Text style={styles.header}>TIC TAC TOE</Text>
+        {MainContent}
+        <StatusBar style="auto" />
       </View>
-      <StatusBar style="auto" />
-    </View>
-  );
+    );
+  };
 }
 
 const styles = StyleSheet.create({
@@ -114,20 +198,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  board: {
-    width: 148,
-    height: 148,
-    borderWidth: 2,
-  },
-  square: {
-    alignItems: "center",
-    justifyContent: "center",
-    width: 48,
-    height: 48,
-    borderWidth: 2,
-  },
   status: {
     margin: 16,
+    height: 24,
+    display: "flex",
   },
   buttons: {
     flexDirection: "row",
@@ -139,3 +213,5 @@ const styles = StyleSheet.create({
     width: 100,
   },
 });
+
+export default App;

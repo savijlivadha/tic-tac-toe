@@ -1,35 +1,41 @@
 import React from "react";
 import {
   StyleSheet,
-  Text,
   View,
   FlatList,
-  TouchableOpacity,
 } from "react-native";
+import { IconButton } from "@react-native-material/core";
+import { Entypo, Feather } from '@expo/vector-icons';
+
+const X = <Feather name="x" size={48} color="black" />;
+const O = <Entypo name="circle" size={36} color="black" />;
 
 const Square = ({
-  item: { value, onPress, status },
+  item: { value, onPress, status, thinking },
+  index,
 }: {
-  item: { value: string; onPress: () => void; status: Status };
+  item: { value: string; onPress: () => void; status: Status, thinking: boolean };
   index: number;
-}) =>
-  status !== Status.PLAYING || value ? (
-    <View style={styles.square}>
-      <Text>{value}</Text>
-    </View>
+}) => {
+  const style = [
+    styles.square,
+    index % 3 === 2 ? styles.noBorderRight : null,
+    index > 5 ? styles.noBorderBottom : null,
+  ]
+  return status !== Status.PLAYING || value ? (
+    <IconButton disabled={thinking} style={style} icon={() => value ? value === "O" ? O : X : null} />
   ) : (
-    <TouchableOpacity style={styles.square} onPress={onPress}>
-      <Text>{value}</Text>
-    </TouchableOpacity>
+    <IconButton disabled={thinking} style={style} onPress={onPress} />
   );
+}
 
 export default function Board({
   board,
 }: {
-  board: { value: string; onPress: () => void; status: Status }[];
+  board: { value: string; onPress: () => void; status: Status, thinking: boolean }[];
 }) {
   return (
-    <View style={styles.board}>
+    <View>
       <FlatList
         data={board}
         renderItem={Square}
@@ -46,16 +52,22 @@ enum Status {
 }
 
 const styles = StyleSheet.create({
-  board: {
-    width: 148,
-    height: 148,
-    borderWidth: 2,
-  },
   square: {
     alignItems: "center",
     justifyContent: "center",
     width: 48,
     height: 48,
-    borderWidth: 2,
+    borderWidth: 0,
+    borderRightWidth: 2,
+    borderBottomWidth: 2,
+    borderRadius: 0,
+  },
+  noBorderRight: {
+    borderWidth: 0,
+    borderRightWidth: 0,
+  },
+  noBorderBottom: {
+    borderWidth: 0,
+    borderBottomWidth: 0,
   },
 });
