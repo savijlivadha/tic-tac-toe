@@ -1829,10 +1829,10 @@
   resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-13.0.0.tgz#e2989b85e95a82bce216f88cf8fb583ab050ec95"
   integrity sha512-TI+l71+5aSKnShYclFa14Kum+hQMZ86b95SH6tQUG3qZEmLTarvWpKwqtTwQKqvlJSJrpFiSFu3eCuZokY6zWA==
 
-"@expo/webpack-config@^18.0.1":
-  version "18.0.2"
-  resolved "https://registry.yarnpkg.com/@expo/webpack-config/-/webpack-config-18.0.2.tgz#1c6f43547f32a685879e4dffab35d2b33d79cf9a"
-  integrity sha512-AwIJPk+aLUB9HBvHM3RyIuzoGV2PXm87RLslaT5UxlRp/GPxKJAgRJGgC3Dzlh9d89xFrYveOggUJd8TRTv3XQ==
+"@expo/webpack-config@^18.0.3":
+  version "18.0.3"
+  resolved "https://registry.yarnpkg.com/@expo/webpack-config/-/webpack-config-18.0.3.tgz#b0a8211a9a241d48ea3036891768701e1cb9e8f5"
+  integrity sha512-/1sg+hDtvSQCEWDP6J+3yM3+SGcUiUinX/JarBTsH8MudvzeUmZgsI8IxRFYGfUPYUkwJ5e57eHQzadj0taeHQ==
   dependencies:
     "@babel/core" "^7.20.2"
     "@expo/config" "6.0.20"
@@ -3478,15 +3478,7 @@ chalk@^2.0.0, chalk@^2.0.1, chalk@^2.4.2:
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
-chalk@^4.0.0, chalk@^4.1.0:
-  version "4.1.1"
-  resolved "https://registry.npmjs.org/chalk/-/chalk-4.1.1.tgz"
-  integrity sha512-diHzdDKxcU+bAsUboHLPEDQiw0qEe0qd7SYUn3HgcFlWgbDcfLGswOHYeGrHKzG9z6UYf01d9VFMfZxPM1xZSg==
-  dependencies:
-    ansi-styles "^4.1.0"
-    supports-color "^7.1.0"
-
-chalk@^4.1.2:
+chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.2.tgz#aac4e2b7734a740867aeb16bf02aad556a1e7a01"
   integrity sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
