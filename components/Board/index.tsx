@@ -7,8 +7,8 @@ import {
 import { IconButton } from "@react-native-material/core";
 import { Entypo, Feather } from '@expo/vector-icons';
 
-const X = <Feather name="x" size={48} color="black" />;
-const O = <Entypo name="circle" size={36} color="black" />;
+export const X = <Feather name="x" size={48} color="black" />;
+export const O = <Entypo name="circle" size={36} color="black" />;
 
 const Square = ({
   item: { value, onPress, status, thinking },

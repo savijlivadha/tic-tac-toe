@@ -7,9 +7,9 @@ import {
 } from "react-native";
 import { Button } from "@react-native-material/core";
 import SelectMode from "./components/SelectMode";
-import Board from "./components/Board";
+import Board, { X, O } from "./components/Board";
 import { calculateWinner, calculateDraw, calculateBestMove } from "./utility";
-import { IconButton, ActivityIndicator } from "@react-native-material/core";
+import { ActivityIndicator } from "@react-native-material/core";
 
 enum Status {
   PLAYING,
@@ -18,6 +18,7 @@ enum Status {
 }
 
 type AppState = {
+  preLoaded: boolean,
   board: Array<"X" | "O">,
   next: "X" | "O",
   winner?: string,
@@ -28,12 +29,21 @@ type AppState = {
 
 class App extends Component {
   state: AppState = {
+    preLoaded: false,
     board: Array(9).fill(null),
     next: "X",
     status: Status.PLAYING,
     players: 0,
     thinking: false,
   };
+
+  componentDidMount(): void {
+    setTimeout(() => {
+      this.setState({
+        preLoaded: true,
+      });
+    }, 100);
+  }
 
   componentDidUpdate(prevProps: Readonly<{}>, prevState: Readonly<AppState>): void {
     const {
@@ -65,13 +75,7 @@ class App extends Component {
       } = this.state;
 
       if (next === "O" && players === 1) {
-        // this.setState({
-        //   thinking: true,
-        // }, () => {
-        //   setTimeout(() => {
-            this.makeAIMove();
-        //   }, 500);
-        // });
+        this.makeAIMove();
       }
     };
 
@@ -137,6 +141,7 @@ class App extends Component {
 
   render(): React.ReactNode {
     const {
+      preLoaded,
       board,
       status,
       players,
@@ -177,10 +182,20 @@ class App extends Component {
       MainContent = <SelectMode setPlayers={this.setPlayers} />;
     }
 
+    const Loading = (
+      <>
+        <div style={{ display: "none" }}>
+          {X}
+          {O}
+        </div>
+        <ActivityIndicator size="large" />
+      </>
+    );
+
     return (
       <View style={styles.container}>
         <Text style={styles.header}>TIC TAC TOE</Text>
-        {MainContent}
+        {preLoaded ? MainContent : Loading }
         <StatusBar style="auto" />
       </View>
     );
