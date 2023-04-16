@@ -1,34 +1,20 @@
 {
   "files": {
-    "app.js": "/tic-tac-toe/static/js/app.b622c573.chunk.js",
-    "app.js.map": "/tic-tac-toe/static/js/app.b622c573.chunk.js.map",
-    "runtime~app.js": "/tic-tac-toe/static/js/runtime~app.f305e1de.js",
-    "runtime~app.js.map": "/tic-tac-toe/static/js/runtime~app.f305e1de.js.map",
-    "static/js/2.0b8f0796.chunk.js": "/tic-tac-toe/static/js/2.0b8f0796.chunk.js",
-    "static/js/2.0b8f0796.chunk.js.map": "/tic-tac-toe/static/js/2.0b8f0796.chunk.js.map",
-    "fonts/AntDesign.ttf": "/tic-tac-toe/./fonts/AntDesign.ttf",
-    "fonts/Entypo.ttf": "/tic-tac-toe/./fonts/Entypo.ttf",
-    "fonts/Feather.ttf": "/tic-tac-toe/./fonts/Feather.ttf",
-    "fonts/FontAwesome.ttf": "/tic-tac-toe/./fonts/FontAwesome.ttf",
-    "fonts/FontAwesome5_Brands.ttf": "/tic-tac-toe/./fonts/FontAwesome5_Brands.ttf",
-    "fonts/FontAwesome5_Solid.ttf": "/tic-tac-toe/./fonts/FontAwesome5_Solid.ttf",
-    "fonts/Fontisto.ttf": "/tic-tac-toe/./fonts/Fontisto.ttf",
-    "fonts/Foundation.ttf": "/tic-tac-toe/./fonts/Foundation.ttf",
-    "fonts/Ionicons.ttf": "/tic-tac-toe/./fonts/Ionicons.ttf",
-    "fonts/MaterialCommunityIcons.ttf": "/tic-tac-toe/./fonts/MaterialCommunityIcons.ttf",
-    "fonts/MaterialIcons.ttf": "/tic-tac-toe/./fonts/MaterialIcons.ttf",
-    "fonts/SimpleLineIcons.ttf": "/tic-tac-toe/./fonts/SimpleLineIcons.ttf",
-    "favicon-16.png": "/tic-tac-toe/favicon-16.png",
-    "favicon-32.png": "/tic-tac-toe/favicon-32.png",
+    "main.js": "/tic-tac-toe/static/js/main.d86a0e2b.js",
+    "static/js/258.48415a97.js": "/tic-tac-toe/static/js/258.48415a97.js",
+    "static/media/Entypo.ttf": "/tic-tac-toe/static/media/Entypo.fc6169344c041cffcdae.ttf",
+    "static/media/Feather.ttf": "/tic-tac-toe/static/media/Feather.0f5d9cede2e831f3fc80.ttf",
     "favicon.ico": "/tic-tac-toe/favicon.ico",
     "index.html": "/tic-tac-toe/index.html",
+    "favicon-32.png": "/tic-tac-toe/favicon-32.png",
+    "favicon-16.png": "/tic-tac-toe/favicon-16.png",
     "manifest.json": "/tic-tac-toe/manifest.json",
     "serve.json": "/tic-tac-toe/serve.json",
-    "static/js/2.0b8f0796.chunk.js.LICENSE.txt": "/tic-tac-toe/static/js/2.0b8f0796.chunk.js.LICENSE.txt"
+    "main.d86a0e2b.js.map": "/tic-tac-toe/static/js/main.d86a0e2b.js.map",
+    "258.48415a97.js.map": "/tic-tac-toe/static/js/258.48415a97.js.map"
   },
   "entrypoints": [
-    "static/js/runtime~app.f305e1de.js",
-    "static/js/2.0b8f0796.chunk.js",
-    "static/js/app.b622c573.chunk.js"
+    "static/js/258.48415a97.js",
+    "static/js/main.d86a0e2b.js"
   ]
 }
