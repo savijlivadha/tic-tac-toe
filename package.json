@@ -21,7 +21,7 @@
     "react-native-web": "~0.19.12"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.4",
+    "@babel/core": "^7.24.7",
     "@types/react": "~18.0.33",
     "@types/react-native": "~0.71.6",
     "gh-pages": "^6.1.1",
