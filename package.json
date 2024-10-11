@@ -24,7 +24,7 @@
     "@babel/core": "^7.25.8",
     "@types/react": "^18.3.11",
     "@types/react-native": "^0.73.0",
-    "gh-pages": "^6.1.1",
+    "gh-pages": "^6.2.0",
     "typescript": "^5.6.3"
   },
   "private": true
