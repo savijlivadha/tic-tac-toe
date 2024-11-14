@@ -1169,15 +1169,15 @@
     mv "~2"
     safe-json-stringify "~1"
 
-"@expo/cli@0.21.2":
-  version "0.21.2"
-  resolved "https://registry.yarnpkg.com/@expo/cli/-/cli-0.21.2.tgz#a5bdc7cf021ddf13c0bbec037cba888a52887202"
-  integrity sha512-qRTAx+WlOb59JV6X0wdPnFDUphMVyTm2yccqV8EikJ84uSvCUiB8P8f3VwgjOqrPh6FbAVo4/OG2DC2QuXXu3A==
+"@expo/cli@0.21.3":
+  version "0.21.3"
+  resolved "https://registry.yarnpkg.com/@expo/cli/-/cli-0.21.3.tgz#7e21bda5a51367b3a3027aa12dbfe5f5e33311e7"
+  integrity sha512-r7MUilXmvtJ3inxD1P+uefTmVrIV43QLZlG0YvHPGX2NGCZcFFXwZkSquqnfZ2gzOXdHs2cAbqLJsH37nDq14g==
   dependencies:
     "@0no-co/graphql.web" "^1.0.8"
     "@babel/runtime" "^7.20.0"
     "@expo/code-signing-certificates" "^0.0.5"
-    "@expo/config" "~10.0.2"
+    "@expo/config" "~10.0.4"
     "@expo/config-plugins" "~9.0.3"
     "@expo/devcert" "^1.1.2"
     "@expo/env" "~0.4.0"
@@ -1187,7 +1187,7 @@
     "@expo/osascript" "^2.0.31"
     "@expo/package-manager" "^1.5.0"
     "@expo/plist" "^0.2.0"
-    "@expo/prebuild-config" "^8.0.9"
+    "@expo/prebuild-config" "^8.0.15"
     "@expo/rudder-sdk-node" "^1.1.1"
     "@expo/spawn-async" "^1.7.2"
     "@expo/xcpretty" "^4.3.0"
@@ -1279,10 +1279,10 @@
   resolved "https://registry.yarnpkg.com/@expo/config-types/-/config-types-52.0.1.tgz#327af1b72a3a9d4556f41e083e0e284dd8198b96"
   integrity sha512-vD8ZetyKV7U29lR6+NJohYeoLYTH+eNYXJeNiSOrWCz0witJYY11meMmEnpEaVbN89EfC6uauSUOa6wihtbyPQ==
 
-"@expo/config@10.0.3", "@expo/config@~10.0.0", "@expo/config@~10.0.2":
-  version "10.0.3"
-  resolved "https://registry.yarnpkg.com/@expo/config/-/config-10.0.3.tgz#547b0bc1b78fad0d97d109d6db1755f3ab82918a"
-  integrity sha512-BrFMqoQXDl8O6gZqF2EtGtA1p8u3Sp8z6B8aJppEo5qrtPaxlyShkHwuLhlpLisQdipZWP89+meOqxk7bUOU2Q==
+"@expo/config@~10.0.4":
+  version "10.0.4"
+  resolved "https://registry.yarnpkg.com/@expo/config/-/config-10.0.4.tgz#a58ec3baef123e77584fbae769484bae2ee74f37"
+  integrity sha512-pkvdPqKTaP6+Qvc8aTmDLQ9Dfwp98P1GO37MFKwsF5XormfN/9/eN8HfIRoM6d3uSIVKCcWW3X2yAEbNmOyfXw==
   dependencies:
     "@babel/code-frame" "~7.10.4"
     "@expo/config-plugins" "~9.0.0"
@@ -1394,16 +1394,16 @@
     json5 "^2.2.3"
     write-file-atomic "^2.3.0"
 
-"@expo/metro-config@0.19.3", "@expo/metro-config@~0.19.0":
-  version "0.19.3"
-  resolved "https://registry.yarnpkg.com/@expo/metro-config/-/metro-config-0.19.3.tgz#fd825bb3512ab8fe572f87a5dd7bd926a670eb47"
-  integrity sha512-+QSDjRapqrY5YqnGa6PaFIn3tGukvsRAdzjJ18+Meh6y8NtzwXGQosHgvvRXUJ91FMOHFFw99H576VELdqhnPA==
+"@expo/metro-config@0.19.4", "@expo/metro-config@~0.19.0":
+  version "0.19.4"
+  resolved "https://registry.yarnpkg.com/@expo/metro-config/-/metro-config-0.19.4.tgz#940b6fad7809a92a8ffdb1bbe87aa805f5822c6b"
+  integrity sha512-2SWwYN8MZvMIRawWEr+1RBYncitPwu2VMACRYig+wBycJ9fsPb6BMVmBYi+3MHDUlJHNy/Bqfw++jn1eqBFETQ==
   dependencies:
     "@babel/core" "^7.20.0"
     "@babel/generator" "^7.20.5"
     "@babel/parser" "^7.20.0"
     "@babel/types" "^7.20.0"
-    "@expo/config" "~10.0.0"
+    "@expo/config" "~10.0.4"
     "@expo/env" "~0.4.0"
     "@expo/json-file" "~9.0.0"
     "@expo/spawn-async" "^1.7.2"
@@ -1453,12 +1453,12 @@
     base64-js "^1.2.3"
     xmlbuilder "^14.0.0"
 
-"@expo/prebuild-config@^8.0.9":
-  version "8.0.13"
-  resolved "https://registry.yarnpkg.com/@expo/prebuild-config/-/prebuild-config-8.0.13.tgz#1025e8bef535d335527e7405b543190bef30734a"
-  integrity sha512-QBfr2A0Qlqp5A9x6mjEasTv5we6AwbAzNZaYCvZAXivqlcqcNJOcVYpRZcZGKMdr5G6mMrqQZ3JaW8PnFglLbA==
+"@expo/prebuild-config@^8.0.15":
+  version "8.0.16"
+  resolved "https://registry.yarnpkg.com/@expo/prebuild-config/-/prebuild-config-8.0.16.tgz#281cb19107cc4a3bf3c707a5861d8e14efdac9f2"
+  integrity sha512-mHdPSw5SrYaPInktRAPKnRMxJIpPmAQDeCA9FOuQv/DrXuMdQqHgkcHVgTdYWZrSJjDx8qJR5/YraBjncTMfbQ==
   dependencies:
-    "@expo/config" "~10.0.0"
+    "@expo/config" "~10.0.4"
     "@expo/config-plugins" "~9.0.0"
     "@expo/config-types" "^52.0.0"
     "@expo/image-utils" "^0.6.0"
@@ -4023,12 +4023,12 @@ expo-asset@~11.0.1:
     invariant "^2.2.4"
     md5-file "^3.2.3"
 
-expo-constants@~17.0.0, expo-constants@~17.0.2:
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/expo-constants/-/expo-constants-17.0.2.tgz#f4ad6af307a8d310f3515315271d10b62bc65485"
-  integrity sha512-Z4QrHuy2fDOP0xv9bNeX7dKaZ1GSBA5ExmtuSKX3hN1S1Gsllb/VxOYEaLUWk8xncQlbf2vEAHcMbHGo8U/3cA==
+expo-constants@~17.0.0, expo-constants@~17.0.3:
+  version "17.0.3"
+  resolved "https://registry.yarnpkg.com/expo-constants/-/expo-constants-17.0.3.tgz#a05b38e0417d59759ece1642b4d483889e04dbda"
+  integrity sha512-lnbcX2sAu8SucHXEXxSkhiEpqH+jGrf+TF+MO6sHWIESjwOUVVYlT8qYdjR9xbxWmqFtrI4KV44FkeJf2DaFjQ==
   dependencies:
-    "@expo/config" "~10.0.0"
+    "@expo/config" "~10.0.4"
     "@expo/env" "~0.4.0"
 
 expo-file-system@~18.0.3:
@@ -4086,21 +4086,21 @@ expo-status-bar@^2.0.0:
   resolved "https://registry.yarnpkg.com/expo-status-bar/-/expo-status-bar-2.0.0.tgz#dd99adc2ace12a24c92718cd0f97b93347103393"
   integrity sha512-vxxdpvpNDMTEc5uTiIrbTvySKKUsOACmfl8OZuUdjNle05oGqwtq3v5YObwym/njSByjoyuZX8UpXBZnxvarwQ==
 
-expo@^52.0.5:
-  version "52.0.5"
-  resolved "https://registry.yarnpkg.com/expo/-/expo-52.0.5.tgz#3f43c2de58571f959435fa53ab4d6440002d854f"
-  integrity sha512-dLqnnEIptjmZIRmtsK07Gnj3U8YwUmLZJ4NU4cUbSOZsL8D8nBWRlEhdp6HGFxBOgxK9yWG/K4/5HxpiMwadsA==
+expo@^52.0.6:
+  version "52.0.6"
+  resolved "https://registry.yarnpkg.com/expo/-/expo-52.0.6.tgz#6270c7a60b769f31234d8fdea92895d953103ed5"
+  integrity sha512-Dci5Ezs+98KZ+onLl0pQ2y+t2cW3Kkhqv485nxZXPpSqcp+Y33ZZ6L+SUxY2zhnYx/cB5LNPnjDmrEdaCAP60A==
   dependencies:
     "@babel/runtime" "^7.20.0"
-    "@expo/cli" "0.21.2"
-    "@expo/config" "10.0.3"
+    "@expo/cli" "0.21.3"
+    "@expo/config" "~10.0.4"
     "@expo/config-plugins" "9.0.9"
     "@expo/fingerprint" "0.11.2"
-    "@expo/metro-config" "0.19.3"
+    "@expo/metro-config" "0.19.4"
     "@expo/vector-icons" "^14.0.0"
     babel-preset-expo "~12.0.0"
     expo-asset "~11.0.1"
-    expo-constants "~17.0.2"
+    expo-constants "~17.0.3"
     expo-file-system "~18.0.3"
     expo-font "~13.0.1"
     expo-keep-awake "~14.0.1"
