@@ -25,7 +25,7 @@
     "@types/react": "^18.3.13",
     "@types/react-native": "^0.73.0",
     "gh-pages": "^6.3.0",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.3"
   },
   "private": true
 }
