@@ -3917,13 +3917,12 @@ expo-server@^1.0.5:
   resolved "https://registry.yarnpkg.com/expo-server/-/expo-server-1.0.5.tgz#2d52002199a2af99c2c8771d0657916004345ca9"
   integrity sha512-IGR++flYH70rhLyeXF0Phle56/k4cee87WeQ4mamS+MkVAVP+dDlOHf2nN06Z9Y2KhU0Gp1k+y61KkghF7HdhA==
 
-expo-status-bar@^2.2.3:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/expo-status-bar/-/expo-status-bar-2.2.3.tgz#09385a866732328e0af3b4588c4f349a15fd7cd0"
-  integrity sha512-+c8R3AESBoduunxTJ8353SqKAKpxL6DvcD8VKBuh81zzJyUUbfB4CVjr1GufSJEKsMzNPXZU+HJwXx7Xh7lx8Q==
+expo-status-bar@^3.0.9:
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/expo-status-bar/-/expo-status-bar-3.0.9.tgz#87cfc803fa614f09a985b8e75e3dd7abd51ce2cb"
+  integrity sha512-xyYyVg6V1/SSOZWh4Ni3U129XHCnFHBTcUo0dhWtFDrZbNp/duw5AGsQfb2sVeU0gxWHXSY1+5F0jnKYC7WuOw==
   dependencies:
-    react-native-edge-to-edge "1.6.0"
-    react-native-is-edge-to-edge "^1.1.6"
+    react-native-is-edge-to-edge "^1.2.1"
 
 expo@^54.0.29:
   version "54.0.29"
@@ -6587,20 +6586,15 @@ react-is@^18.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
-react-native-edge-to-edge@1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/react-native-edge-to-edge/-/react-native-edge-to-edge-1.6.0.tgz#2ba63b941704a7f713e298185c26cde4d9e4b973"
-  integrity sha512-2WCNdE3Qd6Fwg9+4BpbATUxCLcouF6YRY7K+J36KJ4l3y+tWN6XCqAC4DuoGblAAbb2sLkhEDp4FOlbOIot2Og==
-
 react-native-flex-layout@^0.1.5:
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/react-native-flex-layout/-/react-native-flex-layout-0.1.5.tgz#147379c9286a6d6999cd942dc9f4bdec75514ddd"
   integrity sha512-DrLir5Wl0RhgJXHeDBSaa1Y1LdpNuoz0PEe5E1T1+xVWt2DAz/r+1N8bnhtVkTKJE6WrH6jIH2hoe8kogR0X+w==
 
-react-native-is-edge-to-edge@^1.1.6:
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/react-native-is-edge-to-edge/-/react-native-is-edge-to-edge-1.1.7.tgz#28947688f9fafd584e73a4f935ea9603bd9b1939"
-  integrity sha512-EH6i7E8epJGIcu7KpfXYXiV2JFIYITtq+rVS8uEb+92naMRBdxhTuS8Wn2Q7j9sqyO0B+Xbaaf9VdipIAmGW4w==
+react-native-is-edge-to-edge@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/react-native-is-edge-to-edge/-/react-native-is-edge-to-edge-1.2.1.tgz#64e10851abd9d176cbf2b40562f751622bde3358"
+  integrity sha512-FLbPWl/MyYQWz+KwqOZsSyj2JmLKglHatd3xLZWskXOpRaio4LfEDEz8E/A6uD8QoTHW6Aobw1jbEwK7KMgR7Q==
 
 react-native-web@^0.20.0:
   version "0.20.0"
