@@ -13,7 +13,7 @@
   "dependencies": {
     "@expo/webpack-config": "^19.0.1",
     "@react-native-material/core": "^1.3.7",
-    "expo": "^54.0.30",
+    "expo": "^54.0.31",
     "expo-status-bar": "^3.0.9",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
