@@ -3490,10 +3490,10 @@ expo-keep-awake@~55.0.6:
   resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-55.0.6.tgz#b5bac9a811e0dfe77deefeaf57e9c73b5dbcc839"
   integrity sha512-acJjeHqkNxMVckEcJhGQeIksqqsarscSHJtT559bNgyiM4r14dViQ66su7bb6qDVeBt0K7z3glXI1dHVck1Zgg==
 
-expo-modules-autolinking@55.0.18:
-  version "55.0.18"
-  resolved "https://registry.yarnpkg.com/expo-modules-autolinking/-/expo-modules-autolinking-55.0.18.tgz#a360b9d0fc0afb4cfba22233c67780f01cba6053"
-  integrity sha512-olGTCWYkwVPj/momcgnF+z8MTzurGNFjopqPztQ4F53UkGPJnOFEuaM2/z4KbZtKbwHqeBv34OA5hxZP8uLdaQ==
+expo-modules-autolinking@55.0.19:
+  version "55.0.19"
+  resolved "https://registry.yarnpkg.com/expo-modules-autolinking/-/expo-modules-autolinking-55.0.19.tgz#5dd1e06c5f584d285dc7503990f960ec5135a782"
+  integrity sha512-rHO1NZC/bxcKTLzkn6WYm9ErzS6qp7Kgb1NM2YxXJAYRWHwW/M7NZXyj6swWiKxyhRpcdoppRpjrz1sBuYGAjg==
   dependencies:
     "@expo/require-utils" "^55.0.4"
     "@expo/spawn-async" "^1.7.2"
@@ -3529,10 +3529,10 @@ expo-status-bar@^55.0.5:
   dependencies:
     react-native-is-edge-to-edge "^1.2.1"
 
-expo@^55.0.17:
-  version "55.0.17"
-  resolved "https://registry.yarnpkg.com/expo/-/expo-55.0.17.tgz#18b3b3425647bb89987d68d10298b0d12ab88b19"
-  integrity sha512-yVF2phiPw5XgOCedC/oQaL3j0XbwzsBLst3JiAF8bi9aFlxLOVvuDEM8BDg3E09XGSLaGCAclY4q5L+sFerXlQ==
+expo@^55.0.18:
+  version "55.0.18"
+  resolved "https://registry.yarnpkg.com/expo/-/expo-55.0.18.tgz#ef91fd67b3993a252931d29cccbc9b79f87b8b60"
+  integrity sha512-J3LVgN8ygERC0pmSjXfW2W/jlT18+VBek6vB9DBJiCNyrGKpSE4Kv9BH7VooiIMEizwwzsgDgXbDRWBS14IaKA==
   dependencies:
     "@babel/runtime" "^7.20.0"
     "@expo/cli" "55.0.26"
@@ -3552,7 +3552,7 @@ expo@^55.0.17:
     expo-file-system "~55.0.17"
     expo-font "~55.0.6"
     expo-keep-awake "~55.0.6"
-    expo-modules-autolinking "55.0.18"
+    expo-modules-autolinking "55.0.19"
     expo-modules-core "55.0.23"
     pretty-format "^29.7.0"
     react-refresh "^0.14.2"
