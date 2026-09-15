@@ -870,7 +870,7 @@
     "@babel/helper-string-parser" "^7.29.7"
     "@babel/helper-validator-identifier" "^7.29.7"
 
-"@expo/cli@^57.0.23":
+"@expo/cli@^57.0.24":
   version "57.0.24"
   resolved "https://registry.yarnpkg.com/@expo/cli/-/cli-57.0.24.tgz#0256a3bf40bc5467f55d96950ec19dfb55ea556b"
   integrity sha512-CCBkvhPgAcrzJQ3daYbyOD6YuqKKkvOIyUfAbsUIvlpLomIlocYxFHYdmaC/KHqfCsbGFYSV/QKTSYshhSFNEA==
@@ -1016,10 +1016,10 @@
   resolved "https://registry.yarnpkg.com/@expo/expo-modules-macros-plugin/-/expo-modules-macros-plugin-0.6.1.tgz#5581bbe09e0aedb39ea787a9960eb0a9ee07d2ff"
   integrity sha512-cpsLZE4rqkc1Y3eZTkxB98jrqY1YXgetmtxFt8q89jBRmk3quRuk1BZo+VcnCSObZardjg99r1k5xijEMONFGA==
 
-"@expo/fingerprint@^0.20.12":
-  version "0.20.12"
-  resolved "https://registry.yarnpkg.com/@expo/fingerprint/-/fingerprint-0.20.12.tgz#7e02e18d9f8ed80e8eea19278f8e17ce08652eaf"
-  integrity sha512-FIR5fkZYeFaLSowmjgyB6RPKl8AXeE8HuCBHHvyxK8UhOjpPfCAmzT4E7v2yub4qqDafKnfcOFCYxvpUEu+01w==
+"@expo/fingerprint@^0.20.13":
+  version "0.20.13"
+  resolved "https://registry.yarnpkg.com/@expo/fingerprint/-/fingerprint-0.20.13.tgz#244496407df37a41bdb030261ff7db61aed2b48b"
+  integrity sha512-h1x+w+JpNRu88a/5SMZRzJs9YDGR/f7R8ApCr7OdenhqmJ00hFxQMzvxajDLL+1P2Y2g/ND0xksusqvBqWSW5Q==
   dependencies:
     "@expo/env" "^2.4.3"
     "@expo/spawn-async" "^1.8.0"
@@ -3335,39 +3335,39 @@ execa@^5.0.0:
     signal-exit "^3.0.3"
     strip-final-newline "^2.0.0"
 
-expo-asset@~57.0.16:
-  version "57.0.16"
-  resolved "https://registry.yarnpkg.com/expo-asset/-/expo-asset-57.0.16.tgz#a35ba26ca02260c45ef67aa3e7f12b2892fb5135"
-  integrity sha512-IBRfQdW3iFT+GOBERMZLZM1MUNyrjMgMskuD0elVZ1ae44858UFlTJkHO3f8vi+u5zuv7O7KofsiN8NMG/uWzw==
+expo-asset@~57.0.17:
+  version "57.0.17"
+  resolved "https://registry.yarnpkg.com/expo-asset/-/expo-asset-57.0.17.tgz#bd34aa6601159b9f45f7bdccad6a3f987d24f6ed"
+  integrity sha512-qSdWZBSfEg06o3GJMwcj36tw0vXkB6eYjqkQistWmyJkHxhUOKnsKJnev6OraXxLdoI+KOd1+qgp/ENx8gcqYA==
   dependencies:
     "@expo/image-utils" "^0.11.5"
-    expo-constants "~57.0.17"
+    expo-constants "~57.0.18"
 
-expo-constants@~57.0.17:
-  version "57.0.17"
-  resolved "https://registry.yarnpkg.com/expo-constants/-/expo-constants-57.0.17.tgz#d8b900991f2a5e3c2567fc6e9d1d052527d4fa20"
-  integrity sha512-cPWYBKN1SEbg2lXg2f8VkePJqGZrJPLvVdQDCTfbFu9sQHO1M31Y1zILReUuGnmt/VKeUz40ze579vR00xGu/A==
+expo-constants@~57.0.18:
+  version "57.0.18"
+  resolved "https://registry.yarnpkg.com/expo-constants/-/expo-constants-57.0.18.tgz#51b6af86caa1bcfc7dde92fbe501449172891dc5"
+  integrity sha512-cLDwDOniPfuCZPHNY++cAY2ZkK97u5aobbBvilPK2LLmaWxR4ZpD31LWUIzUDLrwMPxLjmh1uURnbeYEf0Mivw==
   dependencies:
     "@expo/env" "~2.4.3"
 
-expo-file-system@~57.0.6:
-  version "57.0.6"
-  resolved "https://registry.yarnpkg.com/expo-file-system/-/expo-file-system-57.0.6.tgz#83cb02ad19dff1b23c8e48d5435e04c51791f2a9"
-  integrity sha512-pm8PMYEW6BnVOCBJ7df9FcDmQtE1tqImuYphlfYe1ipQRLYtdCayRczJcbKIsnB3mqEyp4gC2gWmMbsAsAOjVg==
+expo-file-system@~57.0.7:
+  version "57.0.7"
+  resolved "https://registry.yarnpkg.com/expo-file-system/-/expo-file-system-57.0.7.tgz#03c4587c0027f65f7e04d88796aefcfe74b03cae"
+  integrity sha512-1vkZRadOsIputFDBcclqBa1pO3iXOO6iIsdqJipQWw4V5TSnWgmRTuOF7ro8IzrVue+PHbum++KCG3Tawem4cg==
 
-expo-font@~57.0.3:
-  version "57.0.3"
-  resolved "https://registry.yarnpkg.com/expo-font/-/expo-font-57.0.3.tgz#b8fcc4a574a39d8b57949132190bf10995e0cff3"
-  integrity sha512-kiVUnc2A8vAvO2FfDJTsQa5BwmY+PAkof/1wRb5MOkcX1jtiaSTwz9gCUAyscMBFLundZDmZrLy1P7LZVC+NvA==
+expo-font@~57.0.4:
+  version "57.0.4"
+  resolved "https://registry.yarnpkg.com/expo-font/-/expo-font-57.0.4.tgz#ccd67dd2ee3168510a1a2453a5a8b8fd7f8a5fe4"
+  integrity sha512-7WOMC2oA6xCfOm8bbofqWn2bIqyWFm7YLEnpc/gA1MJH0Ll0TfT/3+CqRkoW2eNRWMS8sxrz5WukUmSvmNquHA==
   dependencies:
     fontfaceobserver "^2.1.0"
 
-expo-keep-awake@~57.0.1:
-  version "57.0.1"
-  resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-57.0.1.tgz#75dfd3d6faeb0f32eb8b670d6b736375fdf2cdb8"
-  integrity sha512-28lkFImeXTS+bhAjuCFV7w7tW5bXg27BJVrxv+nC/nyYa86qEa0oFeHwqol6ha5k4pdVDQgBF09GM4A1k76Ssg==
+expo-keep-awake@~57.0.2:
+  version "57.0.2"
+  resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-57.0.2.tgz#ce266252ad478523bb3431d40f67bd643f86bd9c"
+  integrity sha512-GqgH746wtJImmsbyHmCQoi7cOslKuWQBbJHXr53S35Bpf5UvxCAztvnitUEd7D0QvFN2rvkOhylbZpgZZfBLlQ==
 
-expo-modules-autolinking@~57.0.12, expo-modules-autolinking@~57.0.13:
+expo-modules-autolinking@~57.0.13:
   version "57.0.13"
   resolved "https://registry.yarnpkg.com/expo-modules-autolinking/-/expo-modules-autolinking-57.0.13.tgz#64c93c919ff6207d5b2183fcc4e954a440baf8d2"
   integrity sha512-Hj5NjZRlfccazhKab+wK19leRVUr1Y/PUERaRvegIbUSkq4GVxKq6lU9QHlKQyC16MdD/VS4iwsiLivB4o7lvQ==
@@ -3377,7 +3377,7 @@ expo-modules-autolinking@~57.0.12, expo-modules-autolinking@~57.0.13:
     chalk "^4.1.0"
     commander "^7.2.0"
 
-expo-modules-core@~57.0.17:
+expo-modules-core@~57.0.18:
   version "57.0.18"
   resolved "https://registry.yarnpkg.com/expo-modules-core/-/expo-modules-core-57.0.18.tgz#b6b14af0ff61a582a456c74690dcef361bc82520"
   integrity sha512-ovB7C+GVQTlKAOIsOIHJVVXN9Mn0ljf2SYBS+afrRaGqq+HZEn1D3o+HReIVeH1NjCn/xDBb7I4HjldHs6luZA==
@@ -3411,31 +3411,31 @@ expo-status-bar@^57.0.1:
   resolved "https://registry.yarnpkg.com/expo-status-bar/-/expo-status-bar-57.0.1.tgz#0a8ec1657fcd0987f9612ca411a0c3d002f0eaf0"
   integrity sha512-Xwaq1gAoVRWx5dPG5VhT5RSbnI9OilhZnO5qoPBnUaBAa5VzRzfdS8q0/bsPt0jR2DKLtGuP0bQ6efMJ4RIMDg==
 
-expo@^57.0.21:
-  version "57.0.21"
-  resolved "https://registry.yarnpkg.com/expo/-/expo-57.0.21.tgz#6464818c652c63a6f1f71be706e0840b7a6ab124"
-  integrity sha512-lQmC0kCJCleO+uLUwHXY0pLDzcvedKEsX+pmJp4mSxn3JlWDTZvUb0e5UIlV7+bqlN68LpAeKG4c2lrN4zuP0Q==
+expo@^57.0.22:
+  version "57.0.22"
+  resolved "https://registry.yarnpkg.com/expo/-/expo-57.0.22.tgz#04b7a6b87f62e56803719a2ef71aae96aec8b770"
+  integrity sha512-YWUGqWtchsRQzcbU+Iqqt/1kFbZ9Pp3/eg+UenINahNt2RIaDElFJFFWLD1Yfex6WnBm6ESSE8h0/ja28hRqZg==
   dependencies:
     "@babel/runtime" "^7.20.0"
-    "@expo/cli" "^57.0.23"
+    "@expo/cli" "^57.0.24"
     "@expo/config" "~57.0.9"
     "@expo/config-plugins" "~57.0.9"
     "@expo/devtools" "~57.0.1"
     "@expo/dom-webview" "~57.0.1"
-    "@expo/fingerprint" "^0.20.12"
+    "@expo/fingerprint" "^0.20.13"
     "@expo/local-build-cache-provider" "^57.0.8"
     "@expo/log-box" "^57.0.4"
     "@expo/metro" "~56.0.2"
     "@expo/metro-config" "~57.0.12"
     "@ungap/structured-clone" "^1.3.0"
     babel-preset-expo "~57.0.11"
-    expo-asset "~57.0.16"
-    expo-constants "~57.0.17"
-    expo-file-system "~57.0.6"
-    expo-font "~57.0.3"
-    expo-keep-awake "~57.0.1"
-    expo-modules-autolinking "~57.0.12"
-    expo-modules-core "~57.0.17"
+    expo-asset "~57.0.17"
+    expo-constants "~57.0.18"
+    expo-file-system "~57.0.7"
+    expo-font "~57.0.4"
+    expo-keep-awake "~57.0.2"
+    expo-modules-autolinking "~57.0.13"
+    expo-modules-core "~57.0.18"
     pretty-format "^29.7.0"
     react-refresh "^0.14.2"
     whatwg-url-minimum "^0.1.2"
